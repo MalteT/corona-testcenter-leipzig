@@ -1,11 +1,13 @@
-# Vue 3 + Typescript + Vite
+# covid19-testcenter-leipzig
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+View COVID19 testcenters around Leipzig on OpenStreetMaps.
 
-## Recommended IDE Setup
+The project was done to familiarize myself with Vite, VueJS and some TypeScript. The data is provided by [the city of Leipzig](https://opendata.leipzig.de/dataset/corona-testzentren-leipzig/resource/d31c8ffb-ed1f-40f2-bac6-53000bde4dfb) and is already quite old.
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+# Nix
 
-## Type Support For `.vue` Imports in TS
+This is a flake-enabled [Nix](https://nixos.org/)-project.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+# Develop
+
+Simply install all the dependencies using `yarn` and start a development http server with `yarn dev`.
