@@ -18,6 +18,7 @@
 
       updateDocs = pkgs.writeScriptBin "update-docs" ''
         nix build || exit 1
+        chmod +w docs -R
         git rm -rf docs
         mkdir docs || exit 2
         cp -r result/libexec/${name}/deps/${name}/dist/* docs/ || exit 3
